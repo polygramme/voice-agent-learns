@@ -28,6 +28,17 @@ follows [pipecat-examples/phonellm](https://github.com/pipecat-ai/pipecat-exampl
    price questions), one OPSD stage, the eight-scenario holdout replayed for candidate and incumbent.
 4. **Flip.** The proxy serves the candidate. Same question, same bot: it books instead of diagnosing.
 
+## The dashboard
+
+One page with the whole flow: live calls (one row per LLM turn), sandbox rollouts with the judge's reasons,
+the loop's cycle (stages, filter, OPSD steps, the paired holdout and the receipt), the Coval simulation
+ledger, and the GPU node's log.
+
+```bash
+pipecat-trainer dashboard --traces bot/traces --results rollouts/results.jsonl \
+  --runs receipts/runs/dental-fails --names receipts/coval-task-names.json --node-log receipts/node.log
+```
+
 ## Layout
 
 ```
