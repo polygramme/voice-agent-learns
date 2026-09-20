@@ -1,0 +1,103 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/gus-1/main/ap-l2CjBhhQ0c5ailSZg7H0ZA
+✓ Created objects.
+├── 🔨 Created mount 
+│   /private/tmp/claude-501/-Users-gauravshukla-Downloads-SkyRL/1a73afea-af7b-44
+│   fe-bd5b-e1043a8d6141/scratchpad/modal-node/polyvoice_node_fails.py
+├── 🔨 Created mount dental-live-fails.yaml
+├── 🔨 Created mount system.md
+└── 🔨 Created function run_cycle.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 13.0.0
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+/opt/nvidia/entrypoint.d/50-gpu-driver-check.sh: line 5: ldconfig: command not found
+
+WARNING: The NVIDIA Driver was not detected.  GPU functionality will not be available.
+   Use the NVIDIA Container Toolkit to start this container with GPU support; see
+   https://docs.nvidia.com/datacenter/cloud-native/ .
+
+[01:26:14] polyloop reinstalled at fb5a4ab (proxy SSE for streaming clients)
+[01:26:14] budget 85 min; starting SkyRL Tinker server for pipecat-ai/phonellm-alpha-1
+[01:26:24] server up (0.2 min); starting proxy (warms engines)
+[01:34:04] proxy up (7.9 min): {"live": "pipecat-ai/phonellm-alpha-1", "pending_sessions": 0, "traces_dir": "/root/polyloop-runs/dental-fails/traces", "slot": null, "override": false, "system_prompt": true}
+[01:34:04] public proxy https://ta-01m2y6q7znrwjc2n2avke5tjdr-8787-4ht8i5ojqjzxaenylip7how2y.w.modal.host healthz=200 (checked from inside the container; may not hairpin)
+[01:34:04] $ polyvoice check --loop /root/work/dental-live.yaml
+pool coval://8HgYWjLC: 8 test cases; holdout coval://THRS5wSd: 8
+ok
+ 
+[01:34:06] check: exit 0 (7.9 min)
+[01:34:06] smoke skipped
+[01:34:06] $ polyloop run --loop /root/work/dental-live.yaml
+loop dental-fails: cycle 20260920T013406Z -> /root/polyloop-runs/dental-fails/cycles/20260920T013406Z
+[20260920T013406Z] engine warm in 96s (tinker://model_2ac59939/polyloop-warm)
+[20260920T013406Z] filter round 1: 0 contested so far; measuring 8 tasks x 2 under base
+[20260920T013406Z] coval: agent 9VgmNQ4vueEXFLdUEnpWuK -> https://ta-01m2y6q7znrwjc2n2avke5tjdr-8787-4ht8i5ojqjzxaenylip7how2y.w.modal.host/v1/chat/completions
+[20260920T013406Z] coval: default proxy serves base (base model)
+[20260920T013406Z] coval: run m4UgSVoUR6chYVsvhZ85aG: 8 test cases x 2 against base
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN QUEUE 0/0 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 0/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 1/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 2/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 5/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 7/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 8/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 11/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 14/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: IN PROGRESS 16/16 done, 0 failed
+[20260920T013406Z] coval run m4UgSVoUR6chYVsvhZ85aG: COMPLETED 16/16 done, 0 failed
+[20260920T013406Z] train[0] opsd: 82 rows from 1 trace files, 4 steps
+[20260920T013406Z] coval: default proxy serves base (base model)
+[20260920T013406Z] coval: run jua92fpPp6Xxsca7XoAvxk: 8 test cases x 2 against base
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN QUEUE 0/0 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 0/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 3/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 5/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 7/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 10/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 12/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 15/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: IN PROGRESS 16/16 done, 0 failed
+[20260920T013406Z] coval run jua92fpPp6Xxsca7XoAvxk: COMPLETED 16/16 done, 0 failed
+[20260920T013406Z] coval: default proxy serves dental-fails-20260920T013406Z (tinker://model_96ad8350/final)
+[20260920T013406Z] coval: run mYdRfWGJXAwy92V4Tp7TZ2: 8 test cases x 2 against dental-fails-20260920T013406Z
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN QUEUE 0/0 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 0/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 3/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 4/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 7/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 9/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 12/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 15/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: IN PROGRESS 16/16 done, 0 failed
+[20260920T013406Z] coval run mYdRfWGJXAwy92V4Tp7TZ2: COMPLETED 16/16 done, 0 failed
+[20260920T013406Z] gate: reject (delta -0.125, ci [-0.3125, 0.0], W/L/T 0/2/6)
+cycle 20260920T013406Z: rejected
+ 
+[01:58:23] cycle: exit 0 (32.2 min)
+[01:58:23] $ polyloop history --loop /root/work/dental-live.yaml
+loop dental-fails  incumbent: base
+  20260920T013406Z  rejected           stages=6/8  train_tasks=5  delta -0.125 W/L/T 0/2/6
+ 
+[01:58:23] history: exit 0 (32.2 min)
+[01:58:23] $ C=$(ls /root/polyloop-runs/dental/cycles | tail -1); cat /root/polyloop-runs/dental/cycles/$C/receipt.json 2>/dev/null | head -c 2000
+ ls: cannot access '/root/polyloop-runs/dental/cycles': No such file or directory
+
+[01:58:23] receipt: exit 0 (32.2 min)
+[01:58:23] $ C=$(ls /root/polyloop-runs/dental-fails/cycles | tail -1); echo CANDIDATE; cat /root/polyloop-runs/dental-fails/cycles/$C/state.json 2>/dev/null | python -c "import json,sys; s=json.load(sys.stdin); print(json.dumps({k: s.get(k) for k in ('candidate','gate','verdict')}))"
+CANDIDATE
+{"candidate": {"cycle": "20260920T013406Z", "id": "dental-fails-20260920T013406Z", "parent": "base", "sampler_path": "tinker://model_96ad8350/final", "stages": [{"sampler_path": "tinker://model_96ad8350/final", "stage": "opsd", "steps": 4}], "state_path": "tinker://model_96ad8350/weights/final", "step": 4}, "gate": null, "verdict": null}
+ 
+[01:58:23] candidate: exit 0 (32.2 min)
+[01:58:23] HOLD: proxy https://ta-01m2y6q7znrwjc2n2avke5tjdr-8787-4ht8i5ojqjzxaenylip7how2y.w.modal.host stays up for 45 min for the live demo; flip the adapter with POST https://ta-01m2y6q7znrwjc2n2avke5tjdr-8787-4ht8i5ojqjzxaenylip7how2y.w.modal.host/admin/serve

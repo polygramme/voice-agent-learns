@@ -1,0 +1,44 @@
+{"cycle": "20260920T013406Z", "kind": "cycle.start", "ts": "2026-09-20T01:34:07+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.start", "stage": "snapshot", "ts": "2026-09-20T01:34:07+00:00"}
+{"cycle": "20260920T013406Z", "holdout": 8, "holdout_id": "holdout-8-743d1f21500f598b", "incumbent": "base", "kind": "stage.done", "pool": 8, "stage": "snapshot", "trace_files": 0, "ts": "2026-09-20T01:34:07+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.seconds", "seconds": 0.3, "stage": "snapshot", "ts": "2026-09-20T01:34:07+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.start", "stage": "preflight", "ts": "2026-09-20T01:34:07+00:00"}
+{"checks": ["pool", "holdout", "coval", "trainer", "disk", "staleness", "engine-warm"], "cycle": "20260920T013406Z", "kind": "stage.done", "stage": "preflight", "ts": "2026-09-20T01:35:46+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.seconds", "seconds": 99.2, "stage": "preflight", "ts": "2026-09-20T01:35:46+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.start", "stage": "filter", "ts": "2026-09-20T01:35:46+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 53.5, "stage": "filter", "task": "JYNQsobWRCjG7qx9NxF7uA", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [0.25, 0.25], "seconds": 53.5, "stage": "filter", "task": "kgXw7CkkNe3Xa2hp3XZW5e", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [0.5, 1.0], "seconds": 53.5, "stage": "filter", "task": "JrVMRQrBeZhtynpdqJk8Dc", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 0.25], "seconds": 53.5, "stage": "filter", "task": "CpGHAqi6Mg8DruFbYgSwus", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 53.5, "stage": "filter", "task": "U4ENwrqx4a5xtgeD3enoUu", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 53.5, "stage": "filter", "task": "Pvx4ex5cRzEyGoPYkfEbwu", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [0.75, 1.0], "seconds": 53.5, "stage": "filter", "task": "boSVLvbyzUyJokCdSEbo66", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [0.75, 1.0], "seconds": 53.5, "stage": "filter", "task": "Wdf67UutXK4bjKRsSaHK5u", "ts": "2026-09-20T01:42:57+00:00"}
+{"contested": 5, "cycle": "20260920T013406Z", "kind": "stage.done", "measured": 8, "newly_measured": 8, "rounds": 1, "stage": "filter", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.seconds", "seconds": 430.7, "stage": "filter", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.start", "stage": "train", "ts": "2026-09-20T01:42:57+00:00"}
+{"cycle": "20260920T013406Z", "excluded_sessions": 0, "kind": "opsd.rows", "rows": 82, "session_hints": 6, "trace_files": 1, "ts": "2026-09-20T01:42:57+00:00"}
+{"candidate": "dental-fails-20260920T013406Z", "cycle": "20260920T013406Z", "kind": "stage.done", "logprob_abs_diff_max": null, "stage": "train", "stages": [{"sampler_path": "tinker://model_96ad8350/final", "stage": "opsd", "steps": 4}], "steps": 4, "ts": "2026-09-20T01:50:08+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.seconds", "seconds": 431.7, "stage": "train", "ts": "2026-09-20T01:50:08+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.start", "stage": "evaluate", "ts": "2026-09-20T01:50:08+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "iEVKWfPwspyuP9C4QeiVvK", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "oX4ocyEw3KiAyTNNwiQN8x", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "JN4LHmWWTCyAys6FHBkkKH", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "cJmPpDLq6oYDdecuo9gyP4", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "EM9jX8MJmsu74PgJKLs2Zk", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "k2YqeQinbUANkxeyGGxVWe", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "74xRNCoyAkv3mWxdMJ6bxG", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [0.75, 1.0], "seconds": 32.5, "stage": "evaluate.incumbent", "task": "5gqzF9uzRXA83RJPvyUbDT", "ts": "2026-09-20T01:54:31+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 28.7, "stage": "evaluate.candidate", "task": "iEVKWfPwspyuP9C4QeiVvK", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 28.7, "stage": "evaluate.candidate", "task": "oX4ocyEw3KiAyTNNwiQN8x", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 28.7, "stage": "evaluate.candidate", "task": "JN4LHmWWTCyAys6FHBkkKH", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 0.5], "seconds": 28.7, "stage": "evaluate.candidate", "task": "cJmPpDLq6oYDdecuo9gyP4", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 28.7, "stage": "evaluate.candidate", "task": "EM9jX8MJmsu74PgJKLs2Zk", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 1.0], "seconds": 28.7, "stage": "evaluate.candidate", "task": "k2YqeQinbUANkxeyGGxVWe", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [0.25, 0.25], "seconds": 28.7, "stage": "evaluate.candidate", "task": "74xRNCoyAkv3mWxdMJ6bxG", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "error": null, "kind": "rollout.task", "rewards": [1.0, 0.75], "seconds": 28.7, "stage": "evaluate.candidate", "task": "5gqzF9uzRXA83RJPvyUbDT", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.done", "stage": "evaluate", "tasks": 8, "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.seconds", "seconds": 493.9, "stage": "evaluate", "ts": "2026-09-20T01:58:22+00:00"}
+{"cycle": "20260920T013406Z", "kind": "stage.start", "stage": "gate", "ts": "2026-09-20T01:58:22+00:00"}
+{"ci": [-0.3125, 0.0], "cycle": "20260920T013406Z", "decision": "reject", "kind": "stage.done", "losses": 2, "mean_delta": -0.125, "stage": "gate", "ts": "2026-09-20T01:58:22+00:00", "wins": 0}
+{"cycle": "20260920T013406Z", "kind": "stage.seconds", "seconds": 0.0, "stage": "gate", "ts": "2026-09-20T01:58:22+00:00"}

@@ -1,0 +1,43 @@
+{
+  "learning_rate": 1e-05,
+  "dataset_configs": [
+    {
+      "dataset_builder": {
+        "file_path": "/root/polyloop-runs/dental-fails/cycles/20260920T013406Z/train/0-opsd/rows.jsonl",
+        "groups_per_batch": 16,
+        "group_size": 2,
+        "model_name_for_tokenizer": "pipecat-ai/phonellm-alpha-1",
+        "renderer_name": "nemotron3_disable_thinking",
+        "teacher_hint": null
+      },
+      "teacher_config": {
+        "base_model": "pipecat-ai/phonellm-alpha-1",
+        "load_checkpoint_path": null
+      },
+      "groups_per_batch": 16
+    }
+  ],
+  "model_name": "pipecat-ai/phonellm-alpha-1",
+  "recipe_name": "polyloop_opsd",
+  "renderer_name": "nemotron3_disable_thinking",
+  "max_tokens": 256,
+  "temperature": 1.0,
+  "compute_post_kl": false,
+  "evaluator_builders": [],
+  "lora_rank": 32,
+  "kl_penalty_coef": 1.0,
+  "kl_discount_factor": 0.0,
+  "loss_fn": "importance_sampling",
+  "loss_fn_config": null,
+  "num_substeps": 1,
+  "wandb_project": null,
+  "wandb_name": null,
+  "log_path": "/root/polyloop-runs/dental-fails/cycles/20260920T013406Z/train/0-opsd",
+  "base_url": "http://127.0.0.1:8000",
+  "enable_trace": false,
+  "span_chart_every": 0,
+  "eval_every": 0,
+  "save_every": 2,
+  "load_checkpoint_path": null,
+  "max_steps": 4
+}

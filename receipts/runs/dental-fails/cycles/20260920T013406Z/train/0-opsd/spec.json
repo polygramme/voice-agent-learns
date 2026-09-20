@@ -1,0 +1,29 @@
+{
+ "base_url": "http://127.0.0.1:8000",
+ "model": "pipecat-ai/phonellm-alpha-1",
+ "renderer": "nemotron3_disable_thinking",
+ "rows": "/root/polyloop-runs/dental-fails/cycles/20260920T013406Z/train/0-opsd/rows.jsonl",
+ "stage": {
+  "kind": "opsd",
+  "harness": "cookbook-bash",
+  "group_size": 2,
+  "groups_per_batch": 16,
+  "steps": 4,
+  "max_steps_off_policy": 0,
+  "learning_rate": 1e-05,
+  "max_tokens": 256,
+  "max_turns": 30,
+  "max_trajectory_tokens": 4096,
+  "lora_rank": 32,
+  "loss": "importance_sampling",
+  "save_every": 2,
+  "teacher": null,
+  "teacher_hint": null,
+  "kl_penalty_coef": 1.0,
+  "kl_discount_factor": 0.0,
+  "max_hint_chars": 1500,
+  "min_rows": 12
+ },
+ "log_path": "/root/polyloop-runs/dental-fails/cycles/20260920T013406Z/train/0-opsd",
+ "load_checkpoint_path": null
+}
