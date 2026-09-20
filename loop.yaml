@@ -1,0 +1,60 @@
+name: dental-fails
+model: pipecat-ai/phonellm-alpha-1
+renderer: nemotron3_disable_thinking
+base_url: http://127.0.0.1:8000
+proxy_url: http://127.0.0.1:8787
+runs_dir: ~/polyloop-runs
+tasks: coval://8HgYWjLC
+environment:
+  kind: coval
+  options:
+    agent_id: 9GQLHMPDyZLnrYbGHFzHCe
+    persona_id: MUFJdYAHdBHU6UbRRu4ykM
+    metric_ids:
+    - 45kV4TMsiDAox7vocYgjmu
+    - fNFUFZmXorALEWgqXVSZhm
+    public_url: https://REPLACE.trycloudflare.com
+    concurrency: 5
+    max_tokens: 256
+    pass_value: 1.0
+    hint_failures_only: true
+    check_public: false
+stages:
+- kind: opsd
+  group_size: 2
+  groups_per_batch: 16
+  steps: 4
+  learning_rate: 1.0e-05
+  max_tokens: 256
+  max_trajectory_tokens: 4096
+  lora_rank: 32
+  kl_penalty_coef: 1.0
+  max_hint_chars: 1500
+  min_rows: 12
+  save_every: 2
+sandbox:
+  max_parallel: 8
+filter:
+  pool_sample: 8
+  rollouts_per_task: 2
+  keep_min: 0.0
+  keep_max: 1.0
+  min_tasks: 1
+  target_tasks: 8
+  max_rounds: 1
+budget:
+  gpus: 2
+  max_cycle_gpu_seconds: 10800
+gate:
+  holdout: coval://THRS5wSd
+  holdout_limit: 8
+  holdout_seed: 0
+  repeats: 2
+  temperature: 1.0
+  min_delta: 0.05
+  tie_band: 0.05
+  max_regressions: 2
+  logprob_abs_diff_max: 0.05
+  max_error_rate: 0.2
+promote:
+  mode: approve
